@@ -1,0 +1,55 @@
+server:
+   port: 8888
+
+info:
+  app:
+    name: Config
+    description : This is the configuration server for Chetan Kumar
+    version : 1.0.0
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework.web.client.RestTemplate: DEBUG
+    org.springframework.security.oauth: DEBUG
+    com.chetan.config: DEBUG
+
+encrypt:
+  keyStore:
+    location: classpath:/ck-config.jks
+    password:
+    alias: 
+    secret:
+
+spring:
+  application:
+    name: config
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    config:
+      server:
+        prefix: /config
+        git:
+          clone-on-start: true
+          uri: https://github.com/Chetan8594/ck-properties.git
+          username:
+          password:
+          search-paths:
+            - config
+            - config/local
+            - config/system
+            - config/uat
+            - config/perf
+            - config/prod
+          default-label: master
+
+spring.security.user.name: chetan
+spring.security.user.password: config
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      base-path: /admin
