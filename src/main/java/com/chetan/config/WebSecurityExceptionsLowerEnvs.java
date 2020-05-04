@@ -6,7 +6,7 @@ import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
 
-@Profile({"default","local"})
+@Profile({"local"})
 @Configuration
 public class WebSecurityExceptionsLowerEnvs extends WebSecurityConfigurerAdapter {
 
