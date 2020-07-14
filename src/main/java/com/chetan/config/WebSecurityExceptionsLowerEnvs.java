@@ -12,6 +12,6 @@ public class WebSecurityExceptionsLowerEnvs extends WebSecurityConfigurerAdapter
 
     @Override
     public void configure(WebSecurity web) throws Exception {
-        web.ignoring().antMatchers("/admin/**","/config/encrypt","/config/decrypt");
+        web.ignoring().antMatchers("/admin/**","/config/encrypt");
     }
 }

@@ -45,7 +45,7 @@ spring:
           default-label: master
 
 spring.security.user.name: chetan
-spring.security.user.password: config
+spring.security.user.password: '{cipher}AQCgFAprG661xdph2Bls5DKDMZ3NtGDHs4/mvZkLeqEe6O1qVqJ0iRUQ8BewII42nw40jwJi7hfP4/1LwAW7tfIOen/iKEvJ2hZKLbIW3Nc9TnzGuMfnCfO2udo+XKf3lpX64HvumqHzlj7pI7j6xDnBBJ4Q/3IcADO7eBKQfMx+SrQC/RvLoPa/sLLO4smbpsdndp+6XT+Y0SK5NuJGQUSroSH1XNqBx3DjM/pHjLMVj+VzccoOnq/tj6VanssZG5T3/vwsdhifRfLQ3h/WNdW46GmXf8beBGidMWxoSt4EcN4n+Unu7QYs6hwCFYwwNdJUPjxzIfhP3UgUUAlp4G31edogr3yFrwkGKAPCufGI7C7r6JsZ/8zQIxEqTYzKymo='
 
 management:
   endpoints:
